@@ -16,14 +16,3 @@ function draw() {
   //background(220);
 // console.log(c2);
 }
-
-createCanvas(1525, 700, WEBGL);
-c1 = color(255);
-c2 = color(63, 191, 191);
-
-for(let y=0; y<height; y++){
-  n = map(y,0,height,0,1);
-  let newc = lerpColor(c1,c2,n);
-  stroke(newc);
-  line(0,y,width, y);
-}
